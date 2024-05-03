@@ -1,3 +1,33 @@
+<?php
+  require_once __DIR__ . '/model/product.php';
+  require_once __DIR__ . '/model/cat.php';
+  require_once __DIR__ . '/model/dog.php';
+  require_once __DIR__ . '/model/dog/dog_accessories.php';
+  require_once __DIR__ . '/model/dog/dog_food.php';
+  require_once __DIR__ . '/model/dog/dog_games.php';
+  require_once __DIR__ . '/model/cat/cat_accessories.php';
+  require_once __DIR__ . '/model/cat/cat_food.php';
+  require_once __DIR__ . '/model/cat/cat_games.php';
+
+  $dog_accessories = new DogAccessories('M');
+  $cat_accessories = new CatAccessories('M');
+
+  $dog_food = new DogFood('M');
+  $cat_food = new CatFood('M');
+
+  $dog_games = new DogGames('M');
+  $cat_games = new CatGames('M');
+
+  var_dump($dog_accessories);
+  var_dump($cat_accessories);
+
+  var_dump($dog_food);
+  var_dump($cat_food);
+
+  var_dump($dog_games);
+  var_dump($cat_games);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

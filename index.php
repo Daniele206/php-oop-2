@@ -18,6 +18,12 @@
   };
   // try - catch
 
+  //trait - avvaible
+  $trait = new CatAccessories('M', 'Ciotola', 'https://www.loradeglianimali.it/64129-large_default/camon-ciotola-in-melamina-per-gatti-da-150-ml.jpg');
+  
+  var_dump($trait);
+  //trait - avvaible
+
 ?>
 
 <!DOCTYPE html>
@@ -40,6 +46,7 @@
           <h5 class="card-title"><?php echo $product->name ?></h5>
           <h5 class="card-title">Tipologgia: <strong><?php echo $product->type ?></strong></h5>
           <p class="card-text">Taglia dell'animale: <strong><?php echo $product->size ?></strong></p>
+          <p class="card-text"><strong><?php echo $product->avvaible ?></strong></p>
         </div>
       </div>
     <?php endforeach; ?>

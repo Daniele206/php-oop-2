@@ -1,5 +1,9 @@
 <?php
+
+  require_once __DIR__ . '/../avvaible.php';
   class CatAccessories extends Cat{
+    use Avvaible;
+
     public $type = 'Accessories';
     public $name;
     public $img;

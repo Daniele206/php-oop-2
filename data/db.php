@@ -1,7 +1,9 @@
 <?php
   $db = [
     // ----- Exception -------
-    $dog_accessories = new DogAccessories('S', 'Collare', 'https://www.perroslife.com/234-large_default/collare-regolabile.jpg',),
+
+      $dog_accessories = new DogAccessories('S', 'Collare', 'https://www.perroslife.com/234-large_default/collare-regolabile.jpg',),
+
     // ----- Exception -------
 
 

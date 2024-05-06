@@ -10,6 +10,14 @@
   require_once __DIR__ . '/model/cat/cat_games.php';
   require_once __DIR__ . '/data/db.php';
 
+  // try - catch
+  try{
+    $dog_accessories_2 = new DogAccessories('M', 'Collare', 'https://www.perroslife.com/234-large_default/collare-regolabile.jpg',);
+  } catch (Exception $e){
+    var_dump($e->getMessage());
+  };
+  // try - catch
+
 ?>
 
 <!DOCTYPE html>

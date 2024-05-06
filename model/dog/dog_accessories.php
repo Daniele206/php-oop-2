@@ -6,7 +6,11 @@
 
     public function __construct(string $_size, string $_name, string $_img)
     {
-      $this->size = $_size;
+      if($_size != 'M' && $_size != 'S' && $_size != 'L'){
+        throw new Exception('La taglia inserita non é corretta');
+      }else{
+        $this->size = $_size;
+      }
       $this->name = $_name;
       $this->img = $_img;
     }
